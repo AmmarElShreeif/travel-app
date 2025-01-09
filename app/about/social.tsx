@@ -43,7 +43,7 @@ export default function SocialLinksPage() {
       {/* Social Links */}
       <FlatList
         data={socialLinks}
-        keyExtractor={(item) => item.id}
+        keyExtractor={(item) => item.toString()}
         renderItem={renderSocialLink}
         showsVerticalScrollIndicator={false}
       />

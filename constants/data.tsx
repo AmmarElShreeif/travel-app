@@ -77,12 +77,51 @@ export const settings = [
 
 export const categoriesData = [
   {
-    title: "Card 1",
-    location: "Location 1",
+    title: "New York",
+    location: "America",
     price: "100",
     rating: 4.8,
-    category: "house",
     image: images.newyork,
+  },
+  {
+    title: "Swesera",
+    location: "in Europe",
+    price: "399",
+    rating: 4.8,
+    category: "Popular",
+    image: images.swes,
+  },
+  {
+    title: "spain",
+    location: "in Europe",
+    price: "200",
+    rating: 4.8,
+    category: "Popular",
+    image: images.montain,
+  },
+  {
+    title: "California",
+    location: "America",
+    price: "500",
+    rating: 4.8,
+    category: "Popular",
+    image: images.beach,
+  },
+  {
+    title: "Maldeves",
+    location: "in Asia",
+    price: "100",
+    rating: 4.8,
+    category: "Popular",
+    image: images.maldeves,
+  },
+  {
+    title: "Booking",
+    location: "Location 1",
+    price: "400",
+    rating: 4.8,
+    category: "Popular",
+    image: images.Aplan,
   },
 ];
 

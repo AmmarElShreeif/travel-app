@@ -28,8 +28,8 @@ const Filters = () => {
           key={index}
           className={`flex flex-col items-start mx-5 px-4 py-2 rounded-xl ${
             filter === item
-              ? "bg-gray-400"
-              : "bg-gray-800 border border-gray-200"
+              ? "bg-primary-100"
+              : "bg-gray-800 border border-primary-100"
           }`}
           onPress={() => handleCategory(item)}
         >
@@ -37,7 +37,7 @@ const Filters = () => {
             className={`text-sm ${
               filter === item
                 ? "text-white mt-0.5"
-                : "text-black-300 font-rubik"
+                : "text-gray-900 font-semibold"
             }`}
           >
             {item}

@@ -15,6 +15,7 @@ import SortCategories from "@/components/sortCategories";
 import { Card } from "@/components/Card";
 import { router } from "expo-router";
 import { categoriesData } from "@/constants/data";
+import Filters from "@/components/sortCategories";
 
 const ios = Platform.OS === "ios";
 const topMargin = ios ? "mt-3" : "mt-10";
@@ -24,7 +25,7 @@ const index = () => {
   return (
     <SafeAreaView className="flex-1">
       <FlatList
-        data={[...categoriesData]}
+        data={categoriesData}
         keyExtractor={(item) => item.toString()}
         numColumns={2}
         contentContainerClassName="pb-32"
@@ -37,8 +38,8 @@ const index = () => {
               <Text className="text-3xl font-bold text-black">TripTrail</Text>
               <TouchableOpacity>
                 <Image
-                  source={images.welcome}
-                  style={{ width: 15, height: 20 }}
+                  source={images.profile}
+                  style={{ width: 40, height: 40 }}
                   className="rounded-full"
                 />
               </TouchableOpacity>
@@ -49,10 +50,8 @@ const index = () => {
             </View>
 
             <View className="mb-4">
-              <SortCategories />
+              <Filters />
             </View>
-
-            <View className="mb-4"></View>
           </ScrollView>
         )}
       />

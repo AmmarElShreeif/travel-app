@@ -1,16 +1,14 @@
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { createClient } from "@supabase/supabase-js";
 
-if (!process.env.SUPABASE_URL_PROJECT || !process.env.SUPABASE_ANON_KEY) {
+if (!process.env.EXPO_PUBLIC_API_URL || !process.env.EXPO_PUBLIC_API_KEY) {
   throw new Error(
     "SUPABASE_PROJECT_URL and SUPABASE_API_KEY environment variables are required"
   );
 }
 
-console.log(process.env.SUPABASE_URL_PROJECT);
-
-const supabaseUrl = process.env.SUPABASE_URL_PROJECT;
-const supabaseAnonKey = process.env.SUPABASE_ANON_KEY;
+const supabaseUrl = process.env.EXPO_PUBLIC_API_URL;
+const supabaseAnonKey = process.env.EXPO_PUBLIC_API_KEY;
 export const supabase = createClient(supabaseUrl, supabaseAnonKey, {
   auth: {
     storage: AsyncStorage,

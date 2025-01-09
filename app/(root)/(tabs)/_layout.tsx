@@ -77,7 +77,7 @@ export default function RootLayout() {
                 focused ? (
                   <Icon color="#0373F3" name="appiomentOne" />
                 ) : (
-                  <Icon name="appiomentOne" />
+                  <Icon name="appiomentTwo" />
                 )
               }
             />
